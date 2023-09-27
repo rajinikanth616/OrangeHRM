@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="1" name="Test1"> <!-- Opening <test> tag for the first test -->
+    <parameter name="reportName" value="\\MyInfoReport\\MyInfo.html"></parameter>
+    <classes>
+      <class name="OrangeHRM_Test.TestMyinfo"/>
+    </classes>
+  </test> <!-- Closing </test> tag for the first test -->
+
+  <test thread-count="1" name="Test2"> <!-- Opening <test> tag for the second test -->
+    <parameter name="reportName" value="\\PerformanceTestReport\\Performance.html"></parameter>
+    <classes>
+      <class name="OrangeHRM_Test.PreformanceTest1"/>
+    </classes>
+  </test> <!-- Closing </test> tag for the second test -->
+
+  <test thread-count="1" name="Test3"> <!-- Opening <test> tag for the third test -->
+    <parameter name="reportName" value="\\LeaveTestReport\\Leave.html"></parameter>
+    <classes>
+      <class name="OrangeHRM_Test.LeaveTest"/>
+    </classes>
+  </test> <!-- Closing </test> tag for the third test -->
+</suite> <!-- Closing </suite> tag for the suite -->
+
